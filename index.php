@@ -11,76 +11,7 @@ if ($_GET["p"] == null) {
         <meta charset="utf-8">
         <script src="js/jquery-1.5.2.min.js"></script>
         <script src="js/jquery-ui-1.8.11.custom.min.js"></script>
-
-        <?php if ($_GET["p"] == "main") { ?>
-            <script src="js/cp_depends.js" type="text/javascript"></script>
-            <script src="js/CanvasWidget.js" type="text/javascript"></script>
-            <script src="js/CanvasPainter.js" type="text/javascript"></script>
-            <script src="js/CPWidgets.js" type="text/javascript"></script>
-            <script src="js/CPAnimator.js" type="text/javascript"></script>
-            <script src="js/CPDrawing.js" type="text/javascript"></script>
-        <?php } ?>
-
         <script src="js/main.js"></script>
-
-        <?php if ($_GET["p"] == "main") { ?>
-            <script type="text/javascript">
-                var canvasPainter;
-                var colorWidget;
-                var lineWidthWidget;
-                var cl;
-                var ct;
-                    
-//                $("#new-picture").click(function() {
-//                    setCPDrawAction(5);
-//                    return true;
-//                });
-                    
-                $(function() {         
-                    cl = $("#canvas").position()["left"];
-                    ct = $("#canvas").position()["top"];
-                    
-                    canvasPainter = new CanvasPainter("canvas", "canvasInterface", {
-                        x: cl, 
-                        y: ct
-                    });
-
-                    //init widgets
-                    colorWidget = new ColorWidget('colorChooser', {
-                        x: $("#colorChooser").position()["left"], 
-                        y: $("#colorChooser").position()["top"]
-                    });
-                    colorWidget.addWidgetListener(function() {
-                        canvasPainter.setColor(colorWidget.colorString);
-                    });
-
-                    lineWidthWidget = new LineWidthWidget('lineWidthChooser', 10, {
-                        x: $("#lineWidthChooser").position()["left"], 
-                        y: $("#lineWidthChooser").position()["top"]
-                    });
-                    canvasPainter.setLineWidth(10);
-                    lineWidthWidget.addWidgetListener(function() {
-                        canvasPainter.setLineWidth(lineWidthWidget.lineWidth);
-                    });
-                });
-                        
-                function printError(error) {
-                    document.getElementById("errorArea").innerHTML += error + "<br>";
-                }
-
-                // used by the dhtml buttons
-                function setControlLook(id, color) {
-                    if (id != canvasPainter.curDrawAction)
-                        document.getElementById("btn_" + id).style.background = color;
-                }
-
-                function setCPDrawAction(action) {
-                    document.getElementById("btn_" + canvasPainter.curDrawAction).style.background = "#FFFFFF";
-                    document.getElementById("btn_" + action).style.background = "#CCCCCC";
-                    canvasPainter.setDrawAction(action);
-                }
-            </script>
-        <?php } ?>
 
         <link rel="stylesheet" type="text/css" href="css/ui-aristo/jquery-ui-1.8.11.custom.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
