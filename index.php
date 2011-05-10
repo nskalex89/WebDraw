@@ -13,6 +13,7 @@ if ($_GET["p"] == null) {
     <script src="js/jquery-ui-1.8.11.custom.min.js"></script>
 
     <?php if ($_GET["p"] == "main") { ?>
+    <script src="js/processing-1.1.0.min.js"></script>
     <script src="js/farbtastic.js"></script>
     <script src="js/editor.js"></script>
     <?php } ?>

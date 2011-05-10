@@ -13,7 +13,7 @@
         <hr>
         <div>
             <div id="brush-size-slider" style="width: 130px; display: inline-block; vertical-align: middle;"></div>
-            <canvas id="brush-size"></canvas>
+            <canvas data-processing-sources="pde/brush-size.pde" id="brush-size"></canvas>
         </div>
     </div>
 </div>
