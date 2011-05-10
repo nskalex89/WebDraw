@@ -3,6 +3,9 @@ var brushG = 0;
 var brushB = 0;
 
 var brushSize = 10;
+
+var selectedTool = "brush";
+
 var processingInstance;
 
 function drawBrushSize() {
@@ -32,5 +35,21 @@ $(function() {
 
         debugger;
         drawBrushSize();
+    });
+
+    $("#draw-brush").click(function() {
+        selectedTool = "brush";
+    });
+
+    $("#draw-circle").click(function() {
+        selectedTool = "circle";
+    });
+
+    $("#draw-rectangle").click(function() {
+        selectedTool = "rectangle";
+    });
+
+    $("#draw-eraser").click(function() {
+        selectedTool = "eraser";
     });
 });
