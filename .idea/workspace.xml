@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4c33d2e-48a4-4217-9203-226a4a64de57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/processing-1.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pde/brush-size.pde" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pde/plot.pde" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/main.php" afterPath="$PROJECT_DIR$/include/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/editor.js" afterPath="$PROJECT_DIR$/js/editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pde/brush-size.pde" afterPath="$PROJECT_DIR$/pde/brush-size.pde" />
     </list>
     <ignored path="WebDraw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,25 +31,16 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="79" selection-start="1051" selection-end="1061" vertical-scroll-proportion="-9.807693">
+            <state line="8" column="59" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="465" selection-end="465" vertical-scroll-proportion="-1.5690298">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brush-size.pde" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+            <state line="72" column="67" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,16 +49,25 @@
       <file leaf-file-name="editor.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+            <state line="4" column="13" selection-start="53" selection-end="62" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
+      <file leaf-file-name="brush-size.pde" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="9" selection-end="17" vertical-scroll-proportion="0.0">
+            <state line="13" column="4" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot.pde" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pde/plot.pde">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="0" selection-start="1650" selection-end="1650" vertical-scroll-proportion="2.752669">
               <folding />
             </state>
           </provider>
@@ -101,11 +98,12 @@
       <list>
         <option value="$PROJECT_DIR$/css/farbtastic.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/include/main.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/pde/brush-size.pde" />
         <option value="$PROJECT_DIR$/js/editor.js" />
+        <option value="$PROJECT_DIR$/include/main.php" />
+        <option value="$PROJECT_DIR$/pde/brush-size.pde" />
+        <option value="$PROJECT_DIR$/pde/plot.pde" />
       </list>
     </option>
   </component>
@@ -135,8 +133,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,6 +223,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,14 +296,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3358605" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3479909" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -334,7 +332,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="new editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="brush size selector added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -350,6 +348,7 @@
     <MESSAGE value="old editor removed" />
     <MESSAGE value="fixes in main.php" />
     <MESSAGE value="new editor" />
+    <MESSAGE value="brush size selector added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -375,42 +374,45 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="26" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" />
+        <state line="14" column="68" selection-start="374" selection-end="438" vertical-scroll-proportion="0.42348754" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="79" selection-start="1051" selection-end="1061" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="9" selection-end="17" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+        <state line="8" column="59" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="465" selection-end="465" vertical-scroll-proportion="-1.5690298">
+        <state line="72" column="67" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="26" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="53" selection-end="62" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pde/plot.pde">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="1650" selection-end="1650" vertical-scroll-proportion="2.752669">
           <folding />
         </state>
       </provider>

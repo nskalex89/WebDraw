@@ -6,14 +6,14 @@
         <div id="draw-eraser" class="drawing-toolbar-button"><img src="images/editor/draw-eraser.png"></div>
     </div>
     <div style="display: inline-block; padding: 10px; padding-left: 0px;">
-        <canvas id="plot"></canvas>
+        <canvas id="plot" data-processing-sources="pde/plot.pde"></canvas>
     </div>
     <div class="toolbar" style="display: inline-block; vertical-align: top; margin-top: 10px;">
         <div id="colorpicker"></div>
         <hr>
         <div>
             <div id="brush-size-slider" style="width: 130px; display: inline-block; vertical-align: middle;"></div>
-            <canvas data-processing-sources="pde/brush-size.pde" id="brush-size"></canvas>
+            <canvas id="brush-size" data-processing-sources="pde/brush-size.pde"></canvas>
         </div>
     </div>
 </div>
