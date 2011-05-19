@@ -9,6 +9,15 @@ float startY;
 PImage bg;
 boolean canDraw;
 
+void clearPlot() {
+  bg.loadPixels();
+  for (int i = 0; i < bg.pixels.length; i++) {
+    bg.pixels[i] = color(255, 255, 255);
+  }
+  bg.updatePixels();
+  set(0, 0, bg);
+}
+
 void setup() {
   size(imageWidth, imageHeight);
   smooth();
@@ -18,12 +27,7 @@ void setup() {
   fill(c);
 
   bg = createImage(imageWidth, imageHeight, RGB);
-  bg.loadPixels();
-  for (int i = 0; i < bg.pixels.length; i++) {
-    bg.pixels[i] = color(255, 255, 255);
-  }
-  bg.updatePixels();
-  set(0, 0, bg);
+  clearPlot();
 }
 
 void draw() {
@@ -89,3 +93,7 @@ void mouseReleased() {
 
   canDraw = false;
 }
+
+$("#new-picture").click(function() {
+  clearPlot();
+});

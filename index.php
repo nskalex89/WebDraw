@@ -1,8 +1,13 @@
-<?
+<?php
 if ($_GET["p"] == null) {
     Header("Location: index.php?p=main");
     exit;
 }
+
+    include("config/config.php");
+
+    $dbConf = new DbConfig();
+    $conn = new mysqli($dbConf->host, $dbConf->user, $dbConf->password, $dbConf->database);
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,6 +25,14 @@ if ($_GET["p"] == null) {
 
     <?php if ($_GET["p"] == "gallery") { ?>
     <script src="js/gallery.js"></script>
+    <?php } ?>
+
+    <?php if ($_GET["p"] == "load") { ?>
+    <script src="js/jquery.fileupload.js"></script>
+    <script src="js/jquery.fileupload-ui.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.image-gallery.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
     <?php } ?>
 
     <script src="js/main.js"></script>
@@ -51,8 +64,9 @@ if ($_GET["p"] == null) {
             <tr>
                 <td height="50%">
                     <div style="text-align: center; margin-top: 20px;">
-                        <a class="menu" href="index.php?p=main">Главная</a> |
+                        <a class="menu" href="index.php?p=main">Редактор</a> |
                         <a class="menu" href="index.php?p=gallery">Галлерея</a> |
+                        <a class="menu" href="index.php?p=load">Загрузка</a> |
                         <a class="menu" href="index.php?p=about">О сайте</a>
                     </div>
                 </td>
@@ -61,12 +75,11 @@ if ($_GET["p"] == null) {
         </table>
     </header>
     <div class="container">
-        <?php if ($_GET["p"] != "about") { ?>
+        <?php if ($_GET["p"] != "about" && $_GET["p"] != "load") { ?>
         <div class="toolbar-container">
             <div class="toolbar">
                 <?php if ($_GET["p"] == "main") { ?>
                 <div id="new-picture" class="main-toolbar-button">Очистить холст</div>
-                <div id="load-picture" class="main-toolbar-button">Загрузить</div>
                 <div id="delete-picture" class="main-toolbar-button">Сохранить</div>
                 <?php } elseif ($_GET["p"] == "gallery") { ?>
                 <div id="new-picture" class="main-toolbar-button">Редактировать</div>
@@ -82,10 +95,13 @@ if ($_GET["p"] == null) {
             switch ($_GET["p"])
         {
             case "about":
-                include ("include/about.php");
+                include ("include/about.php5");
                 break;
             case "main":
-                include ("include/main.php");
+                include ("include/main.php5");
+                break;
+            case "load":
+                include ("include/load.php5");
                 break;
         }
             ?>
@@ -99,3 +115,7 @@ if ($_GET["p"] == null) {
 </div>
 </body>
 </html>
+
+<?php
+$conn->close();
+?>

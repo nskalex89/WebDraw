@@ -33,7 +33,6 @@ $(function() {
         brushG = rgbColor.green;
         brushB = rgbColor.blue;
 
-        debugger;
         drawBrushSize();
     });
 
