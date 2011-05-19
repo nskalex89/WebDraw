@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4c33d2e-48a4-4217-9203-226a4a64de57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/load.php5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.fileupload-ui.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\WebDraw\include\about.php" afterPath="$PROJECT_DIR$/include/about.php5" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\WebDraw\include\main.php" afterPath="$PROJECT_DIR$/include/main.php5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/editor.js" afterPath="$PROJECT_DIR$/js/editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pde/plot.pde" afterPath="$PROJECT_DIR$/pde/plot.pde" />
     </list>
     <ignored path="WebDraw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -318,7 +309,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="editor added" />
+    <option name="LAST_COMMIT_MESSAGE" value="wrong" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -336,6 +327,7 @@
     <MESSAGE value="new editor" />
     <MESSAGE value="brush size selector added" />
     <MESSAGE value="editor added" />
+    <MESSAGE value="wrong" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
