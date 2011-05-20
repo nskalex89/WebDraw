@@ -3,6 +3,7 @@ if ($_GET["p"] == null) {
     Header("Location: index.php?p=main");
     exit;
 }
+include ("config/config.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,6 +17,7 @@ if ($_GET["p"] == null) {
     <script src="js/processing-1.1.0.min.js"></script>
     <script src="js/farbtastic.js"></script>
     <script src="js/editor.js"></script>
+    <script src="js/ajaxfileupload.js"></script>
     <?php } ?>
 
     <?php if ($_GET["p"] == "gallery") { ?>
@@ -51,7 +53,7 @@ if ($_GET["p"] == null) {
             <tr>
                 <td height="50%">
                     <div style="text-align: center; margin-top: 20px;">
-                        <a class="menu" href="index.php?p=main">Главная</a> |
+                        <a class="menu" href="index.php?p=main">Редактор</a> |
                         <a class="menu" href="index.php?p=gallery">Галлерея</a> |
                         <a class="menu" href="index.php?p=about">О сайте</a>
                     </div>
@@ -96,6 +98,6 @@ if ($_GET["p"] == null) {
     <footer class="page-footer">
         2011, Алексей Сазыкин
     </footer>
-</div>
+</div>  
 </body>
 </html>

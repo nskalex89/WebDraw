@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4c33d2e-48a4-4217-9203-226a4a64de57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pde/plot.pde" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doajaxfileupload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ajaxfileupload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/main.php" afterPath="$PROJECT_DIR$/include/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pde/brush-size.pde" afterPath="$PROJECT_DIR$/pde/brush-size.pde" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/editor.js" afterPath="$PROJECT_DIR$/js/editor.js" />
     </list>
     <ignored path="WebDraw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +34,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="59" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+            <state line="18" column="13" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -40,7 +43,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="67" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+            <state line="70" column="25" selection-start="2319" selection-end="2331" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="55" selection-start="49" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -49,25 +61,16 @@
       <file leaf-file-name="editor.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="53" selection-end="62" vertical-scroll-proportion="0.0">
+            <state line="113" column="10" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brush-size.pde" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
+      <file leaf-file-name="doajaxfileupload.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doajaxfileupload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot.pde" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pde/plot.pde">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="1650" selection-end="1650" vertical-scroll-proportion="2.752669">
+            <state line="43" column="102" selection-start="1258" selection-end="1258" vertical-scroll-proportion="1.3315119">
               <folding />
             </state>
           </provider>
@@ -98,12 +101,14 @@
       <list>
         <option value="$PROJECT_DIR$/css/farbtastic.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/editor.js" />
-        <option value="$PROJECT_DIR$/include/main.php" />
         <option value="$PROJECT_DIR$/pde/brush-size.pde" />
         <option value="$PROJECT_DIR$/pde/plot.pde" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/include/main.php" />
+        <option value="$PROJECT_DIR$/doajaxfileupload.php" />
+        <option value="$PROJECT_DIR$/js/editor.js" />
       </list>
     </option>
   </component>
@@ -133,6 +138,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,20 +154,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebDraw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDraw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDraw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pde" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -203,27 +195,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDraw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDraw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Favorites" />
     </panes>
   </component>
@@ -295,15 +272,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3479909" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3540561" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -374,21 +351,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/pde/plot.pde">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="68" selection-start="374" selection-end="438" vertical-scroll-proportion="0.42348754" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+        <state line="73" column="5" selection-start="1425" selection-end="1425" vertical-scroll-proportion="2.208185">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="67" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+        <state line="13" column="4" selection-start="221" selection-end="221" vertical-scroll-proportion="0.39323843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -398,21 +377,44 @@
         <state line="103" column="26" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pde/brush-size.pde">
+    <entry file="file://$PROJECT_DIR$/js/ajaxfileupload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="53" selection-end="62" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3934426">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pde/plot.pde">
+    <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="1650" selection-end="1650" vertical-scroll-proportion="2.752669">
+        <state line="3" column="55" selection-start="49" selection-end="79" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="25" selection-start="2319" selection-end="2331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="10" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doajaxfileupload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="102" selection-start="1258" selection-end="1258" vertical-scroll-proportion="1.3315119">
           <folding />
         </state>
       </provider>

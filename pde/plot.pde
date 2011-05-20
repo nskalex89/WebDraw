@@ -9,6 +9,18 @@ float startY;
 PImage bg;
 boolean canDraw;
 
+// не убирать!
+/* @pjs preload="http://localhost/WebDraw/files/MassEffect.jpg"; */
+
+void clearPlot() {
+  bg = createImage(imageWidth, imageHeight, RGB);
+  bg.loadPixels();
+  for (int i = 0; i < bg.pixels.length; i++) {
+    bg.pixels[i] = color(255, 255, 255);
+  }
+  bg.updatePixels();
+}
+
 void setup() {
   size(imageWidth, imageHeight);
   smooth();
@@ -17,33 +29,25 @@ void setup() {
   color c = color(brushR, brushG, brushB);
   fill(c);
 
-  bg = createImage(imageWidth, imageHeight, RGB);
-  bg.loadPixels();
-  for (int i = 0; i < bg.pixels.length; i++) {
-    bg.pixels[i] = color(255, 255, 255);
+  if (imgPath != "") {
+    bg = loadImage(imgPath);
   }
-  bg.updatePixels();
-  set(0, 0, bg);
+  else {
+    clearPlot();
+  }
 }
 
 void draw() {
+  background(bg);
   if (canDraw) {
     if (selectedTool == "circle") {
-      set(0, 0, bg);
+      //set(0, 0, bg);
       ellipse(startX, startY, x - startX, y - startY);
     } 
     else if (selectedTool == "rectangle") {
-      set(0, 0, bg);
+      //set(0, 0, bg);
       rect(startX, startY, x - startX, y - startY);
     } 
-    else if (selectedTool == "brush") {
-      ellipse(x, y, brushSize, brushSize);
-    } 
-    else if (selectedTool == "eraser") {
-      color c = color(255, 255, 255);
-      fill(c);
-      ellipse(x, y, brushSize, brushSize);
-    }
   }
 }
 
@@ -79,6 +83,17 @@ void mouseDragged() {
       y += dy * easing;
     }
   }
+
+if (selectedTool == "brush") {
+      noLoop();
+      ellipse(x, y, brushSize, brushSize);
+    } 
+    else if (selectedTool == "eraser") {
+      noLoop();
+      color c = color(255, 255, 255);
+      fill(c);
+      ellipse(x, y, brushSize, brushSize);
+    }
 }
 
 void mouseReleased() {
@@ -88,4 +103,9 @@ void mouseReleased() {
   bg = get();
 
   canDraw = false;
+  loop();
 }
+
+$("#new-picture").click(function() {
+  clearPlot();
+});

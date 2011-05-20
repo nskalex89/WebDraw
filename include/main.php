@@ -1,3 +1,8 @@
+<div class="dialog" id="load-dialog">
+    <form name="form" action="" method="POST" enctype="multipart/form-data">
+        <input id="fileToUpload" type="file" size="45" name="fileToUpload">
+    </form>
+</div>
 <div style="width: 100%; height: 100%;">
     <div class="toolbar" style="display: inline-block; vertical-align: top; margin: 10px;">
         <div id="draw-brush" class="drawing-toolbar-button"><img src="images/editor/draw-brush.png"></div>
@@ -6,7 +11,7 @@
         <div id="draw-eraser" class="drawing-toolbar-button"><img src="images/editor/draw-eraser.png"></div>
     </div>
     <div style="display: inline-block; padding: 10px; padding-left: 0px;">
-        <canvas id="plot" data-processing-sources="pde/plot.pde"></canvas>
+        <canvas id="plot" data-processing-sources="pde/plot.pde" width="550" height="350"></canvas>
     </div>
     <div class="toolbar" style="display: inline-block; vertical-align: top; margin-top: 10px;">
         <div id="colorpicker"></div>
