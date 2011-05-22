@@ -5,7 +5,6 @@ var brushB = 0;
 var brushSize = 10;
 var selectedTool = "brush";
 var processingInstance;
-var imgPath = "http://localhost/WebDraw/files/MassEffect.jpg";
 
 function drawBrushSize() {
     if (!processingInstance) {
@@ -74,9 +73,8 @@ $(function() {
                     if (data.error != '') {
                         alert(data.error);
                     } else {
-                        // TODO: переход по адресу
-                        //imgPath = "files/" + data.msg;
                         $("#load-dialog").dialog("close");
+                        top.location.href = "index.php?p=main&imgid=" + data.msg;
                     }
                 }
             },

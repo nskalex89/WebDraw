@@ -1,6 +1,6 @@
 <?
 if ($_GET["p"] == null) {
-    Header("Location: index.php?p=main");
+    Header("Location: index.php?p=main&imgid=");
     exit;
 }
 include ("config/config.php");
@@ -16,6 +16,7 @@ include ("config/config.php");
     <?php if ($_GET["p"] == "main") { ?>
     <script src="js/processing-1.1.0.min.js"></script>
     <script src="js/farbtastic.js"></script>
+    <script src="js/init.js"></script>
     <script src="js/editor.js"></script>
     <script src="js/ajaxfileupload.js"></script>
     <?php } ?>
@@ -53,7 +54,7 @@ include ("config/config.php");
             <tr>
                 <td height="50%">
                     <div style="text-align: center; margin-top: 20px;">
-                        <a class="menu" href="index.php?p=main">Редактор</a> |
+                        <a class="menu" href="index.php?p=main&imgid=">Редактор</a> |
                         <a class="menu" href="index.php?p=gallery">Галлерея</a> |
                         <a class="menu" href="index.php?p=about">О сайте</a>
                     </div>
