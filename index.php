@@ -55,7 +55,7 @@ include ("config/config.php");
                 <td height="50%">
                     <div style="text-align: center; margin-top: 20px;">
                         <a class="menu" href="index.php?p=main&imgid=">Редактор</a> |
-                        <a class="menu" href="index.php?p=gallery">Галлерея</a> |
+                        <a class="menu" href="index.php?p=gallery">Галерея</a> |
                         <a class="menu" href="index.php?p=about">О сайте</a>
                     </div>
                 </td>
@@ -70,7 +70,7 @@ include ("config/config.php");
                 <?php if ($_GET["p"] == "main") { ?>
                 <div id="new-picture" class="main-toolbar-button">Очистить холст</div>
                 <div id="load-picture" class="main-toolbar-button">Загрузить</div>
-                <div id="delete-picture" class="main-toolbar-button">Сохранить</div>
+                <div id="save-picture" class="main-toolbar-button">Сохранить</div>
                 <?php } elseif ($_GET["p"] == "gallery") { ?>
                 <div id="new-picture" class="main-toolbar-button">Редактировать</div>
                 <div id="load-picture" class="main-toolbar-button">Информация</div>

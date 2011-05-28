@@ -3,6 +3,13 @@
         <input id="fileToUpload" type="file" size="45" name="fileToUpload">
     </form>
 </div>
+<div class="dialog" id="save-dialog">
+    <p>Автор: <input type="text" id="save-author"></p>
+    <p>
+        Комментарий:<br>
+        <textarea id="save-comment" rows="10" cols="45"></textarea>
+    </p>
+</div>
 <div style="width: 100%; height: 100%;">
     <div class="toolbar" style="display: inline-block; vertical-align: top; margin: 10px;">
         <div id="draw-brush" class="drawing-toolbar-button"><img src="images/editor/draw-brush.png"></div>

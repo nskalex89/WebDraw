@@ -5,11 +5,6 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\WebDraw\files\MassEffect.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\WebDraw\pde\MassEffect.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\WebDraw\pde\plot.pde" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doajaxfileupload.php" afterPath="$PROJECT_DIR$/doajaxfileupload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/main.php" afterPath="$PROJECT_DIR$/include/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/editor.js" afterPath="$PROJECT_DIR$/js/editor.js" />
     </list>
     <ignored path="WebDraw.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -274,7 +269,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
