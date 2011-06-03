@@ -43,10 +43,8 @@ include ("config/config.php");
             <tbody>
             <tr>
                 <td rowspan="2" width="30%">
-                    <a href="#">
-                        <img src="images/logo.png" width="260" height="46" alt="WebDraw"
-                             style="margin-left: 10px; border: 0px;">
-                    </a>
+                    <img src="images/logo.png" width="260" height="46" alt="WebDraw"
+                         style="margin-left: 10px; border: 0px;">
                 </td>
                 <td width="40%"></td>
                 <td rowspan="2"></td>
@@ -64,7 +62,7 @@ include ("config/config.php");
         </table>
     </header>
     <div class="container">
-        <?php if ($_GET["p"] != "about") { ?>
+        <?php if ($_GET["p"] != "about" && $_GET["p"] != "imageinfo") { ?>
         <div class="toolbar-container">
             <div class="toolbar">
                 <?php if ($_GET["p"] == "main") { ?>
@@ -72,8 +70,8 @@ include ("config/config.php");
                 <div id="load-picture" class="main-toolbar-button">Загрузить</div>
                 <div id="save-picture" class="main-toolbar-button">Сохранить</div>
                 <?php } elseif ($_GET["p"] == "gallery") { ?>
-                <div id="new-picture" class="main-toolbar-button">Редактировать</div>
-                <div id="load-picture" class="main-toolbar-button">Информация</div>
+                <div id="edit-picture" class="main-toolbar-button">Редактировать</div>
+                <div id="show-picture-info" class="main-toolbar-button">Информация</div>
                 <?php } ?>
             </div>
         </div>
@@ -89,6 +87,12 @@ include ("config/config.php");
                 break;
             case "main":
                 include ("include/main.php");
+                break;
+            case "gallery":
+                include ("include/gallery.php");
+                break;
+            case "imageinfo":
+                include ("include/imageinfo.php");
                 break;
         }
             ?>

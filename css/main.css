@@ -32,6 +32,7 @@ header.page-header {
     background-image: -webkit-linear-gradient(top, #E2E2E2,  #C7C7C7);
     background-image: -moz-linear-gradient(top, #E2E2E2, #C7C7C7);
     background-image: -ms-linear-gradient(top, #E2E2E2, #C7C7C7);
+    background-image: linear-gradient(top, #E2E2E2, #C7C7C7);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid #737373;
@@ -61,6 +62,7 @@ footer.page-footer {
     background-image: -webkit-linear-gradient(top, #E2E2E2,  #C7C7C7);
     background-image: -moz-linear-gradient(top, #E2E2E2, #C7C7C7);
     background-image: -ms-linear-gradient(top, #E2E2E2, #C7C7C7);
+    background-image: linear-gradient(top, #E2E2E2, #C7C7C7);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 1px solid #737373;
@@ -108,4 +110,41 @@ hr {
     border: 0px;
     background-color: #737373;
     height: 1px;
+}
+
+#gallery-grid {
+    border-collapse: separate;
+    border-spacing: 10px;
+    empty-cells: hide;
+    border-style: none;
+}
+
+#gallery-grid td {
+    width: 270px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(top, #E2E2E2,  #C7C7C7);
+    background-image: -moz-linear-gradient(top, #E2E2E2, #C7C7C7);
+    background-image: -ms-linear-gradient(top, #E2E2E2, #C7C7C7);
+    background-image: linear-gradient(top, #E2E2E2, #C7C7C7);
+    border: 1px solid #737373;
+}
+
+#gallery-grid td:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#gallery-grid td.selected {
+    background-color: #D4DDE6;
+    border: 1px solid #7096AB;
+    background-image: none;
+}
+
+
+.gallery-image {
+    width: 253px;
+    heigth: 161px;
+    margin: 0px;
+    margin-left: 8px;
+    margin-top: 3px;
 }

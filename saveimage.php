@@ -43,11 +43,20 @@ if ($_POST['imgid'] == "") {
     "CreationDateTime, ModificationDateTime, Temporary) values('" .
     $s_path . "', '" . $_POST['comment'] . "', '" . $_POST['author'] .
     "', 'Tmp', NOW(), NOW(), FALSE)";
-} else  {  
-    $q_str = "update images set Comment = '" . $_POST['comment'] .
-    "', ModifiedBy = '" . $_POST['author'] . "', ModificationDateTime = NOW(), " .
-    "Temporary = FALSE, FilePath = '" . $s_path .
-    "' where ImageId = " . $_POST["imgid"];
+} else  {
+    if ($tmp == true) {
+        $q_str = "update images set Comment = '" . $_POST['comment'] .
+        "', CreatedBy = '" . $_POST['author'] .
+        "', ModifiedBy = '" . $_POST['author'] . "', ModificationDateTime = NOW(), " .
+        "Temporary = FALSE, FilePath = '" . $s_path .
+        "' where ImageId = " . $_POST["imgid"]; 
+    } else {
+        $q_str = "update images set Comment = '" . $_POST['comment'] .
+        "', ModifiedBy = '" . $_POST['author'] . "', ModificationDateTime = NOW(), " .
+        "Temporary = FALSE, FilePath = '" . $s_path .
+        "' where ImageId = " . $_POST["imgid"];  
+    }
+
 }
 
 $conn->query($q_str);
